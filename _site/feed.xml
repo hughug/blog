@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chen, Baoyi</title>
+    <description>疯言讽语</description>
+    <link>http://localhost:4000/blog</link>
+    
+      
+        <item>
+          <title>git init!</title>
+          <description>&lt;p&gt;Howdy, world!&lt;/p&gt;
+
+&lt;p&gt;$e^{i\pi}+1=0$&lt;/p&gt;
+
+</description>
+          <pubDate>2017-06-29T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/blog/notes/git-init</link>
+          <guid isPermaLink="true">http://localhost:4000/blog/notes/git-init</guid>
+        </item>
+      
+    
+  </channel>
+</rss>
