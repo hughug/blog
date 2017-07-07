@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+	<title>Notes on Emacs · Chen, Baoyi</title>
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@cbywyy" />
+<meta name="twitter:title" content="Notes on Emacs" />
+<meta name="twitter:description" content="This is a note on using GNU Emacs on Mac OSX.  I used to be a  vim user.  I also used the sublime text as the main editor,  sublime text + skim for LaTeX writing and Typora for Markdown.  After Leo...">
+
+<meta name="description" content="This is a note on using GNU Emacs on Mac OSX.  I used to be a  vim user.  I also used the sublime text as the main editor,  sublime text + skim for LaTeX wri...">
+
+
+
+<link rel="icon" href="/blog/assets/favicon.png">
+<link rel="apple-touch-icon" href="/blog/assets/touch-icon.png">
+<link rel="stylesheet" href="/blog/assets/core.css">
+<link rel="canonical" href="/blog/notes/Notes-on-Emacs">
+<link rel="alternate" type="application/atom+xml" title="Chen, Baoyi" href="/blog/feed.xml" />
+
+
+
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+	</head>
+
+	<body>
+
+		<aside class="logo">
+
+	
+
+	<a href="/blog/">
+		<img src="http://www.gravatar.com/avatar/aa7de0338e677aceb92865b32724959b?s=500" class="gravatar" height="86">
+	</a>
+	<span class="logo-prompt">Back to Home</span>
+
+</aside>
+
+
+		<main>
+			<article>
+
+	<div class="center">
+		<h1>Notes on Emacs</h1>
+		<time>July 5, 2017</time>
+	</div>
+
+	<div class="divider"></div>
+
+	<p>This is a note on using <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> on Mac OSX.  I used to be a  vim user.  I also used the <a href="https://www.sublimetext.com/">sublime text</a> as the main editor,  sublime text + <a href="http://skim-app.sourceforge.net/">skim</a> for LaTeX writing and <a href="https://typora.io/">Typora</a> for Markdown.  After <a href="http://duetosymmetry.com">Leo</a> showed me the efficiency of using Emacs, I decide to learn it and write down this note. This note will be updated whenever I have time.</p>
+
+<h2 id="notations">Notations</h2>
+
+<p><code class="highlighter-rouge">C-</code>    holding the <kbd>control</kbd> key or the META key  while typing other keys</p>
+
+<p><code class="highlighter-rouge">M-</code>    holding the Meta key ( <kbd>option</kbd> key on Mac) while typing other keys</p>
+
+<p><code class="highlighter-rouge">RET</code>   the  <kbd>return</kbd> key</p>
+
+<p><code class="highlighter-rouge">DEL</code>   the <kbd>backspace<kbd> key</kbd></kbd></p>
+
+<p><code class="highlighter-rouge">SPC</code>   the <kbd>Space<kbd> bar</kbd></kbd></p>
+
+<p><code class="highlighter-rouge">ESC</code>   the <kbd>Escape<kbd> key</kbd></kbd></p>
+
+<p><code class="highlighter-rouge">TAB</code>   the <kbd>Tab<kbd> key</kbd></kbd></p>
+
+<h2 id="latex">LaTeX</h2>
+
+<p>A good extension for writing LaTeX is <a href="https://www.gnu.org/software/auctex/">AUCTEX</a>.</p>
+
+<h3 id="install-auctex">Install AUCTEX</h3>
+
+<ul>
+  <li>In Emacs, <code class="highlighter-rouge">M-x list-packages</code></li>
+  <li>mark the auctex package for installation with<code class="highlighter-rouge">i</code></li>
+  <li>hit <code class="highlighter-rouge">x</code> to execute the installation procedure.</li>
+</ul>
+
+<h3 id="compilation">Compilation</h3>
+
+<ul>
+  <li>
+    <p>open a tex file</p>
+
+    <p><code class="highlighter-rouge">C-x C-f your_file_name.tex</code></p>
+  </li>
+  <li>
+    <p>compile in OS X EI Capitan or higher</p>
+
+    <p>Since EI Capitan does not allow writing directly to <em>/usr</em> so we need to reconfigure the path for MacTex.</p>
+
+    <ul>
+      <li>
+        <p>In terminal, use <code class="highlighter-rouge">which latex</code> to find out the location of your latex.  For example, on my mac it is <em>/Library/Tex/texbin/latex</em>.</p>
+      </li>
+      <li>
+        <p>then open <em>~/.emacs</em>, add the following to configure the path. Remember to change the path accordingly.</p>
+
+        <div class="highlighter-rouge"><pre class="highlight"><code>(getenv "PATH")
+(setenv "PATH"(concat"/Library/Tex/texbin/" ":"(getenv "PATH")))           
+</code></pre>
+        </div>
+      </li>
+      <li>
+        <p>now you can compile the .tex file by <code class="highlighter-rouge">C-x C-a</code> and see the generated pdf.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="editing">Editing</h3>
+
+<ul>
+  <li>
+    <p>formatting automatically</p>
+
+    <p><code class="highlighter-rouge">C-c C-q C-s</code></p>
+
+    <p>​</p>
+  </li>
+</ul>
+
+<h2 id="git">Git</h2>
+
+<p>To be updated.</p>
+
+<h2 id="org-mode">Org-mode</h2>
+
+<p>To be updated.</p>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<p>To be updated.</p>
+
+
+</article>
+
+<div class="page-navigation">
+	
+		<a class="home" href="/blog/" title="Back to Homepage">Home</a>
+  
+		<span> &middot; </span>
+    <a class="prev" href="/blog/notes/%E9%95%9C" title="PREV: 镜">&gt;&gt;</a>
+  
+</div>
+
+		</main>
+
+		<div class="footer">
+  <span class="block">&lt;/&gt; Powered by 
+        <a href="http://github.com/">Github </a> and
+        <a href="http://github.com/heiswayi/the-plain">The Plain</a> 
+  </span>
+  <span class="block">&copy; 2017 <a href="http://fermionic.me">Chen, Baoyi</a></span>
+</div>
+
+
+	</body>
+
+</html>

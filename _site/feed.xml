@@ -7,6 +7,101 @@
     
       
         <item>
+          <title>Notes on Emacs</title>
+          <description>&lt;p&gt;This is a note on using &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;GNU Emacs&lt;/a&gt; on Mac OSX.  I used to be a  vim user.  I also used the &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;sublime text&lt;/a&gt; as the main editor,  sublime text + &lt;a href=&quot;http://skim-app.sourceforge.net/&quot;&gt;skim&lt;/a&gt; for LaTeX writing and &lt;a href=&quot;https://typora.io/&quot;&gt;Typora&lt;/a&gt; for Markdown.  After &lt;a href=&quot;http://duetosymmetry.com&quot;&gt;Leo&lt;/a&gt; showed me the efficiency of using Emacs, I decide to learn it and write down this note. This note will be updated whenever I have time.&lt;/p&gt;
+
+&lt;h2 id=&quot;notations&quot;&gt;Notations&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-&lt;/code&gt;    holding the &lt;kbd&gt;control&lt;/kbd&gt; key or the META key  while typing other keys&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-&lt;/code&gt;    holding the Meta key ( &lt;kbd&gt;option&lt;/kbd&gt; key on Mac) while typing other keys&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;   the  &lt;kbd&gt;return&lt;/kbd&gt; key&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DEL&lt;/code&gt;   the &lt;kbd&gt;backspace&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt;   the &lt;kbd&gt;Space&lt;kbd&gt; bar&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ESC&lt;/code&gt;   the &lt;kbd&gt;Escape&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;   the &lt;kbd&gt;Tab&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;latex&quot;&gt;LaTeX&lt;/h2&gt;
+
+&lt;p&gt;A good extension for writing LaTeX is &lt;a href=&quot;https://www.gnu.org/software/auctex/&quot;&gt;AUCTEX&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;install-auctex&quot;&gt;Install AUCTEX&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In Emacs, &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x list-packages&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;mark the auctex package for installation with&lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;hit &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; to execute the installation procedure.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;compilation&quot;&gt;Compilation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;open a tex file&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-f your_file_name.tex&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;compile in OS X EI Capitan or higher&lt;/p&gt;
+
+    &lt;p&gt;Since EI Capitan does not allow writing directly to &lt;em&gt;/usr&lt;/em&gt; so we need to reconfigure the path for MacTex.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;In terminal, use &lt;code class=&quot;highlighter-rouge&quot;&gt;which latex&lt;/code&gt; to find out the location of your latex.  For example, on my mac it is &lt;em&gt;/Library/Tex/texbin/latex&lt;/em&gt;.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;then open &lt;em&gt;~/.emacs&lt;/em&gt;, add the following to configure the path. Remember to change the path accordingly.&lt;/p&gt;
+
+        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(getenv &quot;PATH&quot;)
+(setenv &quot;PATH&quot;(concat&quot;/Library/Tex/texbin/&quot; &quot;:&quot;(getenv &quot;PATH&quot;)))           
+&lt;/code&gt;&lt;/pre&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;now you can compile the .tex file by &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-a&lt;/code&gt; and see the generated pdf.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;editing&quot;&gt;Editing&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;formatting automatically&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-q C-s&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;​&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;git&quot;&gt;Git&lt;/h2&gt;
+
+&lt;p&gt;To be updated.&lt;/p&gt;
+
+&lt;h2 id=&quot;org-mode&quot;&gt;Org-mode&lt;/h2&gt;
+
+&lt;p&gt;To be updated.&lt;/p&gt;
+
+&lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h2&gt;
+
+&lt;p&gt;To be updated.&lt;/p&gt;
+</description>
+          <pubDate>2017-07-05T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/blog/notes/Notes-on-Emacs</link>
+          <guid isPermaLink="true">http://localhost:4000/blog/notes/Notes-on-Emacs</guid>
+        </item>
+      
+    
+      
+        <item>
           <title>镜</title>
           <description>&lt;p&gt;我转过身，看见了一头狮子。&lt;/p&gt;
 
