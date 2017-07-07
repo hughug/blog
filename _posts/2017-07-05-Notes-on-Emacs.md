@@ -4,13 +4,13 @@ author: Baoyi Chen
 Updated: 2017-07-05
 ---
 
-This is a note on using [GNU Emacs](https://www.gnu.org/software/emacs/) on Mac OSX.  I used to be a  vim user.  I also used the [sublime text](https://www.sublimetext.com/) as the main editor,  sublime text + [skim](http://skim-app.sourceforge.net/) for LaTeX writing and [Typora](https://typora.io/) for Markdown.  After [Leo](http://duetosymmetry.com) showed me the efficiency of using Emacs, I decide to learn it and write down this note. This note will be updated whenever I have time.   
+This is a note on using [GNU Emacs](https://www.gnu.org/software/emacs/) on Mac OS X.  I used to be a  vim user.  I also used the [sublime text](https://www.sublimetext.com/) as the main editor,  sublime text + [skim](http://skim-app.sourceforge.net/) for LaTeX writing and [Typora](https://typora.io/) for Markdown.  After [Leo](http://duetosymmetry.com) showed me the efficiency of using Emacs, I decide to learn it and write down this note. This note will be updated whenever I have time.   
 
 
 
 ## Notations
 
- ``C-``    holding the <kbd>control</kbd> key or the META key  while typing other keys
+ ``C-``    holding the <kbd>control</kbd> key while typing other keys
 
  ``M-``    holding the Meta key ( <kbd>option</kbd> key on Mac) while typing other keys
 
@@ -54,7 +54,7 @@ A good extension for writing LaTeX is [AUCTEX](https://www.gnu.org/software/auct
 
   Since EI Capitan does not allow writing directly to */usr* so we need to reconfigure the path for MacTex. 
 
-  - In terminal, use ``which latex`` to find out the location of your latex.  For example, on my mac it is */Library/Tex/texbin/latex*. 
+  - In terminal, use ``which latex`` to find out the location of your latex.  For example, on my mac it is */Library/Tex/texbin/latex*. 			
 
   - then open *~/.emacs*, add the following to configure the path. Remember to change the path accordingly.
 
@@ -70,11 +70,8 @@ A good extension for writing LaTeX is [AUCTEX](https://www.gnu.org/software/auct
 
 ### Editing  
 
-* formatting automatically
+Most useful key bindings can be found at [**AUCTEX refcard**](ftp://ftp.gnu.org/gnu/auctex/11.89-extra/tex-ref.pdf).
 
-  ``C-c C-q C-s``
-
-  ​
 
 
 
@@ -93,3 +90,20 @@ To be updated.
 ## Miscellaneous
 
 To be updated.
+
+
+
+## Links
+
+The wiki page for Emacs 
+
+*  [**EmacsWiki**](https://www.emacswiki.org/emacs/SiteMap)
+
+Very useful cheatsheets typed as reference cards
+
+* [**Emacs refcard**](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf)
+* [**AUCTEX refcard**](ftp://ftp.gnu.org/gnu/auctex/11.89-extra/tex-ref.pdf)
+
+
+
+**Last Updated: 2017-07-06**
