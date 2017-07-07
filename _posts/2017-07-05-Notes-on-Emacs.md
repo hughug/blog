@@ -34,7 +34,7 @@ A good extension for writing LaTeX is [AUCTEX](https://www.gnu.org/software/auct
 
 
 
-##### Install AUCTEX
+#### Install AUCTEX
 
 - In Emacs, `` M-x list-packages ``
 - mark the auctex package for installation with`` i``
@@ -43,7 +43,7 @@ A good extension for writing LaTeX is [AUCTEX](https://www.gnu.org/software/auct
 
 
 
-##### Compilation 
+#### Compilation 
 
 * open a tex file
 
@@ -68,7 +68,7 @@ A good extension for writing LaTeX is [AUCTEX](https://www.gnu.org/software/auct
 
   ​
 
-##### Editing  
+#### Editing  
 
 Most useful key bindings can be found at [**AUCTEX refcard**](ftp://ftp.gnu.org/gnu/auctex/11.89-extra/tex-ref.pdf).
 
