@@ -1,10 +1,10 @@
 ---
-title: Contributed talk@33rd PCGM, UCSB
+title: Contributed talk @ 33rd PCGM, UCSB
 author: Baoyi Chen
 updated: 2017-07-17
 ---
 
-## Contributed talk@33rd PCGM, UCSB
+## Contributed talk @ 33rd PCGM, UCSB
 
 *Title*: Linear metric perturbations in near-horizon extremal Kerr
 
