@@ -8,11 +8,11 @@
       
         <item>
           <title>Notes on Emacs</title>
-          <description>&lt;p&gt;This is a note on using &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;GNU Emacs&lt;/a&gt; on Mac OSX.  I used to be a  vim user.  I also used the &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;sublime text&lt;/a&gt; as the main editor,  sublime text + &lt;a href=&quot;http://skim-app.sourceforge.net/&quot;&gt;skim&lt;/a&gt; for LaTeX writing and &lt;a href=&quot;https://typora.io/&quot;&gt;Typora&lt;/a&gt; for Markdown.  After &lt;a href=&quot;http://duetosymmetry.com&quot;&gt;Leo&lt;/a&gt; showed me the efficiency of using Emacs, I decide to learn it and write down this note. This note will be updated whenever I have time.&lt;/p&gt;
+          <description>&lt;p&gt;This is a note on using &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;GNU Emacs&lt;/a&gt; on Mac OS X.  I used to be a  vim user.  I also used the &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;sublime text&lt;/a&gt; as the main editor,  sublime text + &lt;a href=&quot;http://skim-app.sourceforge.net/&quot;&gt;skim&lt;/a&gt; for LaTeX writing and &lt;a href=&quot;https://typora.io/&quot;&gt;Typora&lt;/a&gt; for Markdown.  After &lt;a href=&quot;http://duetosymmetry.com&quot;&gt;Leo&lt;/a&gt; showed me the efficiency of using Emacs, I decide to learn it and write down this note. This note will be updated whenever I have time.&lt;/p&gt;
 
 &lt;h2 id=&quot;notations&quot;&gt;Notations&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-&lt;/code&gt;    holding the &lt;kbd&gt;control&lt;/kbd&gt; key or the META key  while typing other keys&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-&lt;/code&gt;    holding the &lt;kbd&gt;control&lt;/kbd&gt; key while typing other keys&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-&lt;/code&gt;    holding the Meta key ( &lt;kbd&gt;option&lt;/kbd&gt; key on Mac) while typing other keys&lt;/p&gt;
 
@@ -20,17 +20,17 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DEL&lt;/code&gt;   the &lt;kbd&gt;backspace&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt;   the &lt;kbd&gt;Space&lt;kbd&gt; bar&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt;   the &lt;kbd&gt;space&lt;kbd&gt; bar&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ESC&lt;/code&gt;   the &lt;kbd&gt;Escape&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ESC&lt;/code&gt;   the &lt;kbd&gt;escape&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;   the &lt;kbd&gt;Tab&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;   the &lt;kbd&gt;tab&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;latex&quot;&gt;LaTeX&lt;/h2&gt;
 
 &lt;p&gt;A good extension for writing LaTeX is &lt;a href=&quot;https://www.gnu.org/software/auctex/&quot;&gt;AUCTEX&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;install-auctex&quot;&gt;Install AUCTEX&lt;/h3&gt;
+&lt;h4 id=&quot;install-auctex&quot;&gt;Install AUCTEX&lt;/h4&gt;
 
 &lt;ul&gt;
   &lt;li&gt;In Emacs, &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x list-packages&lt;/code&gt;&lt;/li&gt;
@@ -38,7 +38,7 @@
   &lt;li&gt;hit &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; to execute the installation procedure.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;compilation&quot;&gt;Compilation&lt;/h3&gt;
+&lt;h4 id=&quot;compilation&quot;&gt;Compilation&lt;/h4&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -67,20 +67,14 @@
         &lt;p&gt;now you can compile the .tex file by &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-a&lt;/code&gt; and see the generated pdf.&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;editing&quot;&gt;Editing&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;formatting automatically&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-c C-q C-s&lt;/code&gt;&lt;/p&gt;
 
     &lt;p&gt;​&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h4 id=&quot;editing&quot;&gt;Editing&lt;/h4&gt;
+
+&lt;p&gt;Most useful key bindings can be found at &lt;a href=&quot;ftp://ftp.gnu.org/gnu/auctex/11.89-extra/tex-ref.pdf&quot;&gt;&lt;strong&gt;AUCTEX refcard&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;git&quot;&gt;Git&lt;/h2&gt;
 
@@ -93,10 +87,51 @@
 &lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h2&gt;
 
 &lt;p&gt;To be updated.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;The wiki page for Emacs&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.emacswiki.org/emacs/SiteMap&quot;&gt;&lt;strong&gt;EmacsWiki&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Very useful cheatsheets typed as reference cards&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf&quot;&gt;&lt;strong&gt;Emacs refcard&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;ftp://ftp.gnu.org/gnu/auctex/11.89-extra/tex-ref.pdf&quot;&gt;&lt;strong&gt;AUCTEX refcard&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Last Updated: 2017-07-06&lt;/strong&gt;&lt;/p&gt;
 </description>
           <pubDate>2017-07-05T00:00:00+08:00</pubDate>
           <link>http://localhost:4000/blog/notes/Notes-on-Emacs</link>
           <guid isPermaLink="true">http://localhost:4000/blog/notes/Notes-on-Emacs</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Contributed talk @ 33rd PCGM, UCSB</title>
+          <description>&lt;p&gt;&lt;em&gt;Title&lt;/em&gt;: Linear metric perturbations in near-horizon extremal Kerr&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Date&lt;/em&gt;: March 10&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;:&lt;/p&gt;
+
+&lt;div style=&quot;text-align: justify&quot;&gt;
+Finding metric perturbations in the Kerr spacetime typically involves a detour through curvature perturbations and then metric reconstruction, which is a complicated procedure. Meanwhile, separation of variables is possible in Schwarzschild because of the extra symmetry. We show that the same is true in the near-horizon extremal Kerr spacetime: the emergent additional symmetries allow for separation of variables by using a basis adapted to that symmetry. The separation turns the system of partial differential equations into one of ordinary differential equations over a compact domain, the polar angle. As a direct application of our method, we find the linearized metric deformations to the near-horizon extremal Kerr geometry as induced by two string-inspired corrections to general relativity: Einstein-dilaton-Gauss-Bonnet and dynamical Chern-Simons gravity, in the decoupling limit. 
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;My talk slides can be found &lt;a href=&quot;http://www.fermionic.me/talk-slides/NHEK%40PCGM.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is my first academic talk : )&lt;/p&gt;
+</description>
+          <pubDate>2017-03-10T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/blog/notes/Contributed-talks-@-33rd-PCGM-,-UCSB</link>
+          <guid isPermaLink="true">http://localhost:4000/blog/notes/Contributed-talks-@-33rd-PCGM-,-UCSB</guid>
         </item>
       
     
