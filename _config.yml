@@ -8,7 +8,7 @@ google_analytics:   UA-101913308-1 # Put your Google Analytics code
 author_name:        "Chen, Baoyi" # Your name here
 author_email:       baoyi@tapir.caltech.edu # Your email here
 author_gravatar:    aa7de0338e677aceb92865b32724959b # Your Gravatar md5 hash here for logo
-twitter_username:   cbywyy # Your Twitter username here
+twitter_username:   hughug2333 # Your Twitter username here
 github_username:    hughug # Your GitHub username here
 
 # Site Settings
@@ -16,7 +16,6 @@ baseurl:            /blog # Base URL must end WITHOUT a slash, default: ""
 permalink:          /notes/:title # Post permalink
 timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to false to disable
-theme:              The Plain
 
 # Site Build
 highlighter:        rouge
@@ -29,10 +28,11 @@ sass:
 # Other Params
 include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
-gems:
+plugins:
   - jekyll-sitemap
-
-
+  - jekyll-remote-theme
+  
+remote_theme: heiswayi/the-plain
 
 defaults:
   -
@@ -51,4 +51,6 @@ defaults:
     values:
       layout:       "post"
 
-theme: jekyll-theme-minimal
+
+ 
+

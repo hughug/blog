@@ -7,131 +7,50 @@
     
       
         <item>
-          <title>Notes on Emacs</title>
-          <description>&lt;p&gt;This is a note on using &lt;a href=&quot;https://www.gnu.org/software/emacs/&quot;&gt;GNU Emacs&lt;/a&gt; on Mac OS X.  I used to be a  vim user.  I also used the &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;sublime text&lt;/a&gt; as the main editor,  sublime text + &lt;a href=&quot;http://skim-app.sourceforge.net/&quot;&gt;skim&lt;/a&gt; for LaTeX writing and &lt;a href=&quot;https://typora.io/&quot;&gt;Typora&lt;/a&gt; for Markdown.  After &lt;a href=&quot;http://duetosymmetry.com&quot;&gt;Leo&lt;/a&gt; showed me the efficiency of using Emacs, I decide to learn it and write down this note. This note will be updated whenever I have time.&lt;/p&gt;
+          <title>光辉岁月</title>
+          <description>&lt;p&gt;周六和小伙伴来图书馆。&lt;/p&gt;
 
-&lt;h2 id=&quot;notations&quot;&gt;Notations&lt;/h2&gt;
+&lt;p&gt;一位皮肤乌黑，戴着墨镜，塞着耳机，穿着拖鞋，头顶脏辫，衣着也较为邋遢的James长时间一动不动地倚靠在离我们不远的座位上。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-&lt;/code&gt;    holding the &lt;kbd&gt;control&lt;/kbd&gt; key while typing other keys&lt;/p&gt;
+&lt;p&gt;年轻的John是一位图书管理员，他几次走过James身边，发现他都一动不动，于是上来询问他是否身体无恙。James纹丝不动，一言不发。John小哥先向我们致歉说明自己接下里可能会发出一些噪声，然后提高嗓门，拍打书本，企图引起James的注意。然后他依然一动不动。John小哥紧接着触碰一下James的膝盖，James终于有了反应，抬了抬腿。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;M-&lt;/code&gt;    holding the Meta key ( &lt;kbd&gt;option&lt;/kbd&gt; key on Mac) while typing other keys&lt;/p&gt;
+&lt;p&gt;John小哥明白了James只是在无视他。于是又找来了一位较为年长的图书馆管理员，她约70岁左右，叫Emily。她先是向我们表达了歉意，告知我们接下来她可能会发出一些噪音。她询问James是否身体无恙，并表示希望和他对话。James依然无动于衷。几次尝试沟通无果，管理员最终无可奈何，只能对他说，接下来我们要进入一个紧急事态（declare code red），并拿出一张纸向他朗读了一份说明。说明的大致内容是关于图书馆的访客如果不服从工作人员的安排，管理员有权将其驱逐的规定。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;RET&lt;/code&gt;   the  &lt;kbd&gt;return&lt;/kbd&gt; key&lt;/p&gt;
+&lt;p&gt;James依然无动于衷。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DEL&lt;/code&gt;   the &lt;kbd&gt;backspace&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;我和小伙伴有些害怕。甚至开始回忆起门口的安检是否有关于枪支的探测。过了半小时，我们决定去吃个午饭再回来，避免不必要的麻烦。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SPC&lt;/code&gt;   the &lt;kbd&gt;space&lt;kbd&gt; bar&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;这时James突然站了起来走向了我们。&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ESC&lt;/code&gt;   the &lt;kbd&gt;escape&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;“我对刚才在那里发生的事情表示抱歉。” 他礼貌地说，“我正在那里听着podcast，这位John就跑过来企图管理我。我为什么不理睬他们，因为我只想有自己的清净。我一个人坐在那里，没有干扰到任何人，但是我本身在John眼里就是麻烦的存在。”&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TAB&lt;/code&gt;   the &lt;kbd&gt;tab&lt;kbd&gt; key&lt;/kbd&gt;&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;他接着说，“我很羡慕你们。你们有自己的国家。在这里，你如果遭到了不平等的对待，你还可以回你的祖国。而我们没有任何地方可以去。”&lt;/p&gt;
 
-&lt;h2 id=&quot;latex&quot;&gt;LaTeX&lt;/h2&gt;
+&lt;p&gt;我和小伙伴都沉默了。&lt;/p&gt;
 
-&lt;p&gt;A good extension for writing LaTeX is &lt;a href=&quot;https://www.gnu.org/software/auctex/&quot;&gt;AUCTEX&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;“我看到你在那里写代码，是R还是python？我也受过高等教育，我有一个master学位。但是在John们的眼里，我只是一个邋遢的James，意味着麻烦。” 他继续说着。&lt;/p&gt;
 
-&lt;h4 id=&quot;install-auctex&quot;&gt;Install AUCTEX&lt;/h4&gt;
+&lt;p&gt;我继续沉默了。对于自己一开始也以貌取人感到了羞愧。&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;In Emacs, &lt;code class=&quot;highlighter-rouge&quot;&gt;M-x list-packages&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;mark the auctex package for installation with&lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;hit &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; to execute the installation procedure.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;James大哥接着给我们讲述了这些“European”是如何在世界各大洲各国掠夺资源，从而被各个国家的人讨厌。“刚才那位Emily，她的年纪大约70多岁，她的祖父祖母辈就是奴隶主，她一张口说话我就能感受到她的歧视。这就是我们在这里的遭遇，we have no where to go back to。”&lt;/p&gt;
 
-&lt;h4 id=&quot;compilation&quot;&gt;Compilation&lt;/h4&gt;
+&lt;p&gt;“你叫什么名字？” 他继续问我，我说我叫“Patrick”。他笑了，问我是不是因为他们不会读我的名字，所以给自己取了个英文名字。我惭愧地点点头。&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;open a tex file&lt;/p&gt;
+&lt;p&gt;走出图书馆，心里很难不支持与敬佩这位James。但冷静的想了想，也觉得James大哥或许是过分解读了别人。图书馆管理员只是在履行自己的职责，只是恰好被“关心”的人是James，而实施“关心”的是John。&lt;/p&gt;
 
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-f your_file_name.tex&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;compile in OS X EI Capitan or higher&lt;/p&gt;
+&lt;p&gt;一件小事，却瞬间升级成John与James/Emily不可调和的矛盾。John的关心与提醒，是对方眼中的警察行为。James的沉默，则是对方眼中的code red。历史的伤痕太深，John和James大概永远无法互相理解，人类的真善美显得如此可悲。&lt;/p&gt;
 
-    &lt;p&gt;Since EI Capitan does not allow writing directly to &lt;em&gt;/usr&lt;/em&gt; so we need to reconfigure the path for MacTex.&lt;/p&gt;
+&lt;p&gt;回家的路上，车子里播放起了Beyond的《光辉岁月》，如此悦耳又如此刺耳。填平历史的伤痕，试问谁又能做到？&lt;/p&gt;
 
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;p&gt;In terminal, use &lt;code class=&quot;highlighter-rouge&quot;&gt;which latex&lt;/code&gt; to find out the location of your latex.  For example, on my mac it is &lt;em&gt;/Library/Tex/texbin/latex&lt;/em&gt;.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;then open &lt;em&gt;~/.emacs&lt;/em&gt;, add the following to configure the path. Remember to change the path accordingly.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-        &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(getenv &quot;PATH&quot;)
-(setenv &quot;PATH&quot;(concat&quot;/Library/Tex/texbin/&quot; &quot;:&quot;(getenv &quot;PATH&quot;)))           
-&lt;/code&gt;&lt;/pre&gt;
-        &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;now you can compile the .tex file by &lt;code class=&quot;highlighter-rouge&quot;&gt;C-x C-a&lt;/code&gt; and see the generated pdf.&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;© Copyright Reserved&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;​&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;editing&quot;&gt;Editing&lt;/h4&gt;
-
-&lt;p&gt;Most useful key bindings can be found at &lt;a href=&quot;ftp://ftp.gnu.org/gnu/auctex/11.89-extra/tex-ref.pdf&quot;&gt;&lt;strong&gt;AUCTEX refcard&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;git&quot;&gt;Git&lt;/h2&gt;
-
-&lt;p&gt;To be updated.&lt;/p&gt;
-
-&lt;h2 id=&quot;org-mode&quot;&gt;Org-mode&lt;/h2&gt;
-
-&lt;p&gt;To be updated.&lt;/p&gt;
-
-&lt;h2 id=&quot;miscellaneous&quot;&gt;Miscellaneous&lt;/h2&gt;
-
-&lt;p&gt;To be updated.&lt;/p&gt;
-
-&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;The wiki page for Emacs&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.emacswiki.org/emacs/SiteMap&quot;&gt;&lt;strong&gt;EmacsWiki&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Very useful cheatsheets typed as reference cards&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf&quot;&gt;&lt;strong&gt;Emacs refcard&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;ftp://ftp.gnu.org/gnu/auctex/11.89-extra/tex-ref.pdf&quot;&gt;&lt;strong&gt;AUCTEX refcard&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Last Updated: 2017-07-06&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本著作如无特别声明均遵循&lt;a href=&quot;https://creativecommons.org/&quot;&gt;创作共用许可协议&lt;/a&gt;授权&lt;/strong&gt;&lt;/p&gt;
 </description>
-          <pubDate>2017-07-05T00:00:00+08:00</pubDate>
-          <link>http://localhost:4000/blog/notes/Notes-on-Emacs</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/notes/Notes-on-Emacs</guid>
-        </item>
-      
-    
-      
-        <item>
-          <title>Contributed talk @ 33rd PCGM, UCSB</title>
-          <description>&lt;p&gt;&lt;em&gt;Title&lt;/em&gt;: Linear metric perturbations in near-horizon extremal Kerr&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Date&lt;/em&gt;: March 10&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Abstract&lt;/em&gt;:&lt;/p&gt;
-
-&lt;div style=&quot;text-align: justify&quot;&gt;
-Finding metric perturbations in the Kerr spacetime typically involves a detour through curvature perturbations and then metric reconstruction, which is a complicated procedure. Meanwhile, separation of variables is possible in Schwarzschild because of the extra symmetry. We show that the same is true in the near-horizon extremal Kerr spacetime: the emergent additional symmetries allow for separation of variables by using a basis adapted to that symmetry. The separation turns the system of partial differential equations into one of ordinary differential equations over a compact domain, the polar angle. As a direct application of our method, we find the linearized metric deformations to the near-horizon extremal Kerr geometry as induced by two string-inspired corrections to general relativity: Einstein-dilaton-Gauss-Bonnet and dynamical Chern-Simons gravity, in the decoupling limit. 
-&lt;/div&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;My talk slides can be found &lt;a href=&quot;http://www.fermionic.me/talk-slides/NHEK%40PCGM.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is my first academic talk : )&lt;/p&gt;
-</description>
-          <pubDate>2017-03-10T00:00:00+08:00</pubDate>
-          <link>http://localhost:4000/blog/notes/Contributed-talks-@-33rd-PCGM-,-UCSB</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/notes/Contributed-talks-@-33rd-PCGM-,-UCSB</guid>
+          <pubDate>2023-06-17T00:00:00+08:00</pubDate>
+          <link>http://localhost:4000/blog/notes/%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88</link>
+          <guid isPermaLink="true">http://localhost:4000/blog/notes/%E5%85%89%E8%BE%89%E5%B2%81%E6%9C%88</guid>
         </item>
       
     
@@ -387,17 +306,6 @@ Finding metric perturbations in the Kerr spacetime typically involves a detour t
           <pubDate>2013-04-22T00:00:00+08:00</pubDate>
           <link>http://localhost:4000/blog/notes/%E8%B0%88%E8%B0%88%E8%87%AA%E7%94%B1</link>
           <guid isPermaLink="true">http://localhost:4000/blog/notes/%E8%B0%88%E8%B0%88%E8%87%AA%E7%94%B1</guid>
-        </item>
-      
-    
-      
-        <item>
-          <title>git init!</title>
-          <description>
-</description>
-          <pubDate>1993-08-20T00:00:00+08:00</pubDate>
-          <link>http://localhost:4000/blog/notes/git-init</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/notes/git-init</guid>
         </item>
       
     
